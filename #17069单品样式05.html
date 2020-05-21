@@ -26,7 +26,6 @@
       flex-flow: row nowrap;
       align-items: stretch;
       overflow: hidden;
-      cursor: pointer;
     }
 
     .single-product-item-img {
@@ -86,6 +85,8 @@
     }
 
     .grab-immediately-box {
+      -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
       transform: translateX(5px);
     }
 
@@ -96,6 +97,8 @@
       background: linear-gradient(270deg, rgba(254, 101, 3, 1) 0%, rgba(255, 56, 96, 1) 100%);
       box-shadow: 0px 1px 4px 0px rgba(255, 41, 41, 0.28);
       border-radius: 5px 0px 0px 5px;
+      -webkit-transform: skewX(-12deg);
+      -ms-transform: skewX(-12deg);
       transform: skewX(-12deg);
       display: flex;
       flex-flow: column nowrap;
@@ -105,6 +108,8 @@
     }
 
     .grab-immediately span {
+      -webkit-transform: skewX(12deg);
+      -ms-transform: skewX(12deg);
       transform: skewX(12deg);
     }
 
@@ -145,8 +150,9 @@
       border-style: solid;
       border-width: 2px 2px 0 0;
       border-color: #FFF #FFF transparent transparent;
-      transform: rotate(360deg);
       -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
     }
 
     .single-product-item-price-box {
@@ -218,7 +224,7 @@
       width: 0;
       height: 0;
       left: -5px;
-      border-width: 4px 1px 1px 4px;
+      border-width: 2px 3px 2px 3px;
       border-style: solid;
       border-color: #FE3A33 #FE3A33 transparent transparent;
     }
@@ -233,7 +239,7 @@
       </div>
       <div class="single-product-item-info">
         <div class="single-product-item-info-top">
-          <h3>#title#</h3>
+          <h3>#jhs_label# #title#</h3>
           <h5>领券立减#quan_price#元</h5>
         </div>
         <div class="single-product-item-info-bottom">

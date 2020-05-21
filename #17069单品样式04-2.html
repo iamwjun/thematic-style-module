@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单品样式库</title>
+  <style>
+    body {
+      background-color: #303030;
+    }
+
+    .flex-row-173 {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .flex-column-173 {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .text-ellipsis {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .text-ellipsis-multiline-173 {
+      -o-text-overflow: -o-ellipsis-lastline;
+      text-overflow: -o-ellipsis-lastline;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+      white-space: normal;
+    }
+
+    .dtk-col-6 {
+      width: 33%;
+    }
+
+    .wap-product-item-173 {
+      display: inline-block;
+      background: #FFF;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .wap-product-image-173 {
+      /* box-sizing: border-box; */
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 5px;
+      display: block;
+      /* position: relative; */
+    }
+
+    .wap-product-image-173 img {
+      /* position: absolute; */
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      /* top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); */
+    }
+
+    .wap-product-item-173 h3 {
+      justify-content: flex-start;
+      margin: 4px 5px;
+      font-size: 10px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 16px;
+      height: 16px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .wap-product-item-173 h3 img {
+      width: 23px;
+      height: 13px;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    .wap-product-price-173 {
+      padding: 0 5px;
+      height: 17px;
+      justify-content: flex-start;
+      align-items: baseline;
+    }
+
+    .wap-product-price-173 span:nth-child(1) {
+      font-size: 11px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(255, 6, 55, 1);
+    }
+
+    .wap-product-price-173 span:nth-child(2) {
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: rgba(255, 6, 55, 1);
+      margin: 0 2px;
+    }
+
+    .wap-product-price-173 span:nth-child(3) {
+      font-size: 10px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(167, 167, 167, 1);
+      text-decoration: line-through;
+    }
+
+    .wap-product-sales-173 {
+      margin: 5px 0 10px 0;
+      height: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wap-product-sales-173 span {
+      display: inline-block;
+    }
+
+    .wap-product-sales-173 span:nth-child(1) {
+      width: 38px;
+      height: 18px;
+      padding-left: 5px;
+      background: linear-gradient(270deg, rgba(255, 210, 137, 1) 0%, rgba(255, 242, 193, 1) 100%);
+      border-radius: 0px 4px 4px 0px;
+      font-size: 10px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(206, 79, 8, 1);
+    }
+
+    .wap-product-sales-173 span:nth-child(2) {
+      content: '';
+      background-color: #FF3860;
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      border-radius: 3px;
+      left: 36px;
+      top: -5px;
+      transform: rotate(34deg) skewY(20deg);
+      z-index: 9;
+    }
+
+    .wap-product-sales-173 span:nth-child(3) {
+      width: 58px;
+      height: 18px;
+      line-height: 18px;
+      background: linear-gradient(270deg, rgba(254, 101, 3, 1) 0%, rgba(255, 56, 96, 1) 100%);
+      font-size: 10px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      border-radius: 0px 4px 4px 0px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 40px;
+      z-index: 10;
+    }
+
+    .wap-product-sales-173 span:nth-child(3)::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      left: 0;
+      top: 7px;
+      background-color: #FFB533;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="dtk-col-6 wap-product-item-173 flex-column-173" href="#detail_link#" target="_blank">
+    <div class="wap-product-image-173">
+      <img src="#pic#" alt="#title#">
+    </div>
+    <h3 class="text-ellipsis-multiline-176">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAaCAYAAADIUm6MAAAFWklEQVRYR9WYe0zXVRTAP0cTH+FbSIVU8jGfzEAb4BYoPphlwycqOsGmONCkKaZM0wiGiY58oKXOt6iEWKZzioZu5itfJTp8gVNc6Vbma0Qit12+4v19gV8L25zcjT8493zv+XzPOfec8/0JgOKdTlArGeivoJGWvWpL4AFwEErnCKeuiIZW1DoBNH3VYJ3w3BNK/UTht1PBsBoCXYYpkKXB77+q6eHMmTptpBQ/9VK9LeJgTukLZl+2fX0Bq8ZzDj7YH0L8q36nkhLIOASn82DJR1CVsWO/wI5D9uff7wPpCUjDBmVypaFiFsOqLEuvRWP4bhES4P38OXUxH7qHV+JwDp40BYmf4DQYqqgYekUgF7c51xkZD5k59v3T6xHfzgYseRPErzI6UaHIV5+Y/eK/oV5gNcAD3wb9V3HVc0HmWC+k3p0CgT5QyzH8QMxwxL0ZatYKSNlqP+HBQaTh6wYsNhWWZhidxdOQGWP/h8ed+TF6GJIWh7rxK3QaBU9K7Jo92sP5zaBKoesYuHLL7Hu4IYW7bfoqJBb2nzSyvUuQwQEGXEdMR67Ccp4qzRtDNy94Wgo6X/UdqVsHrmUinu6o6EWQm2/l9/mr8OCxdXRGIjIyGLXtAIydbzfXvxeSvdwO3jYUbt4xsuuZyFseBjxxPcxbXQ3wFk3g6jdIE1dU+HxIPwBTRyDLZ6Dyb0OX0XBkFeLXHbVhL0QmQlcvuLDFMuI9Di4W2A0+e75cqB4XQcN+prLUc4FHOUjtWgZ83ALYur8a4Fp15lgkZRpKe6TneMjdirR2Q01MgvV7wK8bHFtjlSz/SfBxGDJ6IGpnDoyoHF5WzEBiRhios3ngG2mgvDsgP2+2R6RXBJy5XE1wlzpwKR1p74nKu4F0boe6Vmh5u+SpddiWBUj4IEvu1dq6qL4RcO5K5VtycBkS3NuAa09qj5avUcHIjkSzrx3SKBgeFVUTXKsPDUSyFprDIhJg4z5zkKc7XN6BNKhXJlN7jsKQuMrQWlK4G/FwM2fN+xoSNxjdTycin00y+7fuQJvQKs/6b53z+Borl2/fhbZDrQvruFKmIjOtJqH6TIZjFyob003n/kHEoVmpinVeN6cxAwz4gZMwKPYFwbUn83cibzRDlZZC70g4WyENDq9EntV8NW0JrMisbKx3F+TUOnv+9gi3KlP5OrcR6dnJgC/LgOmpLwgeF44smmoOO3IOgqLNYUE+SE6a2f/9PnQcCfce2g2OD0E2mfKo9B1x7QvFTyw9HYlHPzxPubLoRaeYcaAC/r+nimt9y9tuTVGz02BuJOLaADV8NmQdsY7KSUOCfFB6dunggfh0Ri3dAbFf2k0lRSHxEeYFr96yGlj5atcSKdhlj0i/GMg5+wIenz0eSY5GXSoAHdb4CcjnUajrt62u6N8dObwSpbunrjSe7uZ/rX/5pjG6MxkZFmTAvz8KHzhc4hA/ZJ89LVSr9+C3P6oJri9TQRbSvDEqbK41DdavC3nbkTYtUXHLYXAA0tcXtfpbiPrCMrBrIRIaiNrzIwyZaYzqstrFy4CnbIFZJsWIDUNSzUVUfz6EpgOrhC7LLKfzuPZu0hRU7nXwHm/m4jEDkPQEdI7Ka7VRfxVDx1FQeNcy0vFNq1G51EENnA7Zp6zaXnSkTFa+1IdJsG6PAUudjsSONvsncq2m5mQ5B187B3TbT8uE7J/M43oQXBkHrVo8y/Ez9ulOS2PDIMjHmmEWrIUmrsi9bHv+BkyG4w5lc3sCEuZQCnVn1h3aGfhL+3SrU9sg6IGtvPOWS/V84jge615R6uTrR3+61eCP5Rr684SOVE38QegfUrYLwfyw76QAAAAASUVORK5CYII=" alt="双11">
+      #title#
+    </h3>
+    <div class="wap-product-price-173 flex-row-173">
+      <span>¥</span>
+      <span>#price#</span>
+      <span>¥#old_price#</span>
+    </div>
+    <div class="wap-product-sales-173">
+      <span>爆卖</span>
+      <span></span>
+      <span>#xiaoliang#件</span>
+    </div>
+  </a>
+</body>
+
+</html>
