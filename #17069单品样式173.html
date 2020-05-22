@@ -9,6 +9,10 @@
       background-color: #303030;
     }
 
+    .zt-ol-mod.single-style-173 .zt-ol-mod-main .zt-ol-mod-list .zt-ol-mod-item:nth-child(2n) {
+      margin-right: 0;
+    }
+
     .flex-row-173 {
       display: flex;
       flex-flow: row nowrap;
@@ -23,7 +27,7 @@
       align-items: stretch;
     }
 
-    .text-ellipsis {
+    .text-ellipsis-173 {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -43,7 +47,7 @@
     }
 
     .dtk-col-6 {
-      width: 33%;
+      width: 31.3%;
     }
 
     .wap-product-item-173 {
@@ -51,15 +55,36 @@
       background: #FFF;
       border-radius: 8px;
       text-decoration: none;
+      float: left;
+      margin: 0 0 10px 1.6%;
+    }
+
+    .wap-product-item-173:nth-child(2n) {
+      margin-right: 0;
     }
 
     .wap-product-image-173 {
       /* box-sizing: border-box; */
-      border-radius: 5px;
       overflow: hidden;
       margin: 5px;
       display: block;
-      /* position: relative; */
+      position: relative;
+    }
+
+    .wap-product-image-173 span {
+      text-align: center;
+      height: 14px;
+      font-size: 10px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      line-height: 14px;
+      width: 90px;
+      height: 14px;
+      background: linear-gradient(270deg, rgba(255, 180, 0, 1) 0%, rgba(255, 133, 28, 1) 100%);
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
     .wap-product-image-173 img {
@@ -68,11 +93,12 @@
       height: auto;
       max-width: 100%;
       max-height: 100%;
+      border-radius: 5px;
       /* top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); */
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
     }
 
     .wap-product-item-173 h3 {
@@ -147,6 +173,10 @@
       font-family: PingFangSC-Regular, PingFang SC;
       font-weight: 400;
       color: rgba(206, 79, 8, 1);
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 0 3px 0 0;
     }
 
     .wap-product-sales-173 span:nth-child(2) {
@@ -189,16 +219,21 @@
       top: 7px;
       background-color: #FFB533;
     }
+
+    .wap-product-item-title-173 {
+      padding-left: 27px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAaCAYAAADIUm6MAAAFWklEQVRYR9WYe0zXVRTAP0cTH+FbSIVU8jGfzEAb4BYoPphlwycqOsGmONCkKaZM0wiGiY58oKXOt6iEWKZzioZu5itfJTp8gVNc6Vbma0Qit12+4v19gV8L25zcjT8493zv+XzPOfec8/0JgOKdTlArGeivoJGWvWpL4AFwEErnCKeuiIZW1DoBNH3VYJ3w3BNK/UTht1PBsBoCXYYpkKXB77+q6eHMmTptpBQ/9VK9LeJgTukLZl+2fX0Bq8ZzDj7YH0L8q36nkhLIOASn82DJR1CVsWO/wI5D9uff7wPpCUjDBmVypaFiFsOqLEuvRWP4bhES4P38OXUxH7qHV+JwDp40BYmf4DQYqqgYekUgF7c51xkZD5k59v3T6xHfzgYseRPErzI6UaHIV5+Y/eK/oV5gNcAD3wb9V3HVc0HmWC+k3p0CgT5QyzH8QMxwxL0ZatYKSNlqP+HBQaTh6wYsNhWWZhidxdOQGWP/h8ed+TF6GJIWh7rxK3QaBU9K7Jo92sP5zaBKoesYuHLL7Hu4IYW7bfoqJBb2nzSyvUuQwQEGXEdMR67Ccp4qzRtDNy94Wgo6X/UdqVsHrmUinu6o6EWQm2/l9/mr8OCxdXRGIjIyGLXtAIydbzfXvxeSvdwO3jYUbt4xsuuZyFseBjxxPcxbXQ3wFk3g6jdIE1dU+HxIPwBTRyDLZ6Dyb0OX0XBkFeLXHbVhL0QmQlcvuLDFMuI9Di4W2A0+e75cqB4XQcN+prLUc4FHOUjtWgZ83ALYur8a4Fp15lgkZRpKe6TneMjdirR2Q01MgvV7wK8bHFtjlSz/SfBxGDJ6IGpnDoyoHF5WzEBiRhios3ngG2mgvDsgP2+2R6RXBJy5XE1wlzpwKR1p74nKu4F0boe6Vmh5u+SpddiWBUj4IEvu1dq6qL4RcO5K5VtycBkS3NuAa09qj5avUcHIjkSzrx3SKBgeFVUTXKsPDUSyFprDIhJg4z5zkKc7XN6BNKhXJlN7jsKQuMrQWlK4G/FwM2fN+xoSNxjdTycin00y+7fuQJvQKs/6b53z+Borl2/fhbZDrQvruFKmIjOtJqH6TIZjFyob003n/kHEoVmpinVeN6cxAwz4gZMwKPYFwbUn83cibzRDlZZC70g4WyENDq9EntV8NW0JrMisbKx3F+TUOnv+9gi3KlP5OrcR6dnJgC/LgOmpLwgeF44smmoOO3IOgqLNYUE+SE6a2f/9PnQcCfce2g2OD0E2mfKo9B1x7QvFTyw9HYlHPzxPubLoRaeYcaAC/r+nimt9y9tuTVGz02BuJOLaADV8NmQdsY7KSUOCfFB6dunggfh0Ri3dAbFf2k0lRSHxEeYFr96yGlj5atcSKdhlj0i/GMg5+wIenz0eSY5GXSoAHdb4CcjnUajrt62u6N8dObwSpbunrjSe7uZ/rX/5pjG6MxkZFmTAvz8KHzhc4hA/ZJ89LVSr9+C3P6oJri9TQRbSvDEqbK41DdavC3nbkTYtUXHLYXAA0tcXtfpbiPrCMrBrIRIaiNrzIwyZaYzqstrFy4CnbIFZJsWIDUNSzUVUfz6EpgOrhC7LLKfzuPZu0hRU7nXwHm/m4jEDkPQEdI7Ka7VRfxVDx1FQeNcy0vFNq1G51EENnA7Zp6zaXnSkTFa+1IdJsG6PAUudjsSONvsncq2m5mQ5B187B3TbT8uE7J/M43oQXBkHrVo8y/Ez9ulOS2PDIMjHmmEWrIUmrsi9bHv+BkyG4w5lc3sCEuZQCnVn1h3aGfhL+3SrU9sg6IGtvPOWS/V84jge615R6uTrR3+61eCP5Rr684SOVE38QegfUrYLwfyw76QAAAAASUVORK5CYII=') left center / 23px 13px no-repeat;
+    }
   </style>
 </head>
 
 <body>
-  <a class="dtk-col-6 wap-product-item-173 flex-column-173" href="#detail_link#" target="_blank">
+  <a class="zt-ol-mod-item dtk-col-6 wap-product-item-173 flex-column-173" href="#detail_link#" target="_blank">
     <div class="wap-product-image-173">
       <img src="#pic#" alt="#title#">
+      <span>买2送1 限量抢购</span>
     </div>
-    <h3 class="text-ellipsis-multiline-173">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAaCAYAAADIUm6MAAAFWklEQVRYR9WYe0zXVRTAP0cTH+FbSIVU8jGfzEAb4BYoPphlwycqOsGmONCkKaZM0wiGiY58oKXOt6iEWKZzioZu5itfJTp8gVNc6Vbma0Qit12+4v19gV8L25zcjT8493zv+XzPOfec8/0JgOKdTlArGeivoJGWvWpL4AFwEErnCKeuiIZW1DoBNH3VYJ3w3BNK/UTht1PBsBoCXYYpkKXB77+q6eHMmTptpBQ/9VK9LeJgTukLZl+2fX0Bq8ZzDj7YH0L8q36nkhLIOASn82DJR1CVsWO/wI5D9uff7wPpCUjDBmVypaFiFsOqLEuvRWP4bhES4P38OXUxH7qHV+JwDp40BYmf4DQYqqgYekUgF7c51xkZD5k59v3T6xHfzgYseRPErzI6UaHIV5+Y/eK/oV5gNcAD3wb9V3HVc0HmWC+k3p0CgT5QyzH8QMxwxL0ZatYKSNlqP+HBQaTh6wYsNhWWZhidxdOQGWP/h8ed+TF6GJIWh7rxK3QaBU9K7Jo92sP5zaBKoesYuHLL7Hu4IYW7bfoqJBb2nzSyvUuQwQEGXEdMR67Ccp4qzRtDNy94Wgo6X/UdqVsHrmUinu6o6EWQm2/l9/mr8OCxdXRGIjIyGLXtAIydbzfXvxeSvdwO3jYUbt4xsuuZyFseBjxxPcxbXQ3wFk3g6jdIE1dU+HxIPwBTRyDLZ6Dyb0OX0XBkFeLXHbVhL0QmQlcvuLDFMuI9Di4W2A0+e75cqB4XQcN+prLUc4FHOUjtWgZ83ALYur8a4Fp15lgkZRpKe6TneMjdirR2Q01MgvV7wK8bHFtjlSz/SfBxGDJ6IGpnDoyoHF5WzEBiRhios3ngG2mgvDsgP2+2R6RXBJy5XE1wlzpwKR1p74nKu4F0boe6Vmh5u+SpddiWBUj4IEvu1dq6qL4RcO5K5VtycBkS3NuAa09qj5avUcHIjkSzrx3SKBgeFVUTXKsPDUSyFprDIhJg4z5zkKc7XN6BNKhXJlN7jsKQuMrQWlK4G/FwM2fN+xoSNxjdTycin00y+7fuQJvQKs/6b53z+Borl2/fhbZDrQvruFKmIjOtJqH6TIZjFyob003n/kHEoVmpinVeN6cxAwz4gZMwKPYFwbUn83cibzRDlZZC70g4WyENDq9EntV8NW0JrMisbKx3F+TUOnv+9gi3KlP5OrcR6dnJgC/LgOmpLwgeF44smmoOO3IOgqLNYUE+SE6a2f/9PnQcCfce2g2OD0E2mfKo9B1x7QvFTyw9HYlHPzxPubLoRaeYcaAC/r+nimt9y9tuTVGz02BuJOLaADV8NmQdsY7KSUOCfFB6dunggfh0Ri3dAbFf2k0lRSHxEeYFr96yGlj5atcSKdhlj0i/GMg5+wIenz0eSY5GXSoAHdb4CcjnUajrt62u6N8dObwSpbunrjSe7uZ/rX/5pjG6MxkZFmTAvz8KHzhc4hA/ZJ89LVSr9+C3P6oJri9TQRbSvDEqbK41DdavC3nbkTYtUXHLYXAA0tcXtfpbiPrCMrBrIRIaiNrzIwyZaYzqstrFy4CnbIFZJsWIDUNSzUVUfz6EpgOrhC7LLKfzuPZu0hRU7nXwHm/m4jEDkPQEdI7Ka7VRfxVDx1FQeNcy0vFNq1G51EENnA7Zp6zaXnSkTFa+1IdJsG6PAUudjsSONvsncq2m5mQ5B187B3TbT8uE7J/M43oQXBkHrVo8y/Ez9ulOS2PDIMjHmmEWrIUmrsi9bHv+BkyG4w5lc3sCEuZQCnVn1h3aGfhL+3SrU9sg6IGtvPOWS/V84jge615R6uTrR3+61eCP5Rr684SOVE38QegfUrYLwfyw76QAAAAASUVORK5CYII=" alt="双11">
+    <h3 class="text-ellipsis-173 wap-product-item-title-173">
       #title#
     </h3>
     <div class="wap-product-price-173 flex-row-173">
