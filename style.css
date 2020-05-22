@@ -187,22 +187,28 @@
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
+  position: relative;
+  padding-left: 16px;
 }
 
 .wap-product-item-coupon-172 u {
   display: inline-block;
-  width: 13px;
-  height: 12px;
-  line-height: 12px;
+  width: 26px;
+  height: 20px;
   background: rgba(255, 255, 255, 1);
-  border-radius: 1px 0px 0px 1px;
+  border-radius: 2px 0px 0px 2px;
   text-decoration: none;
-  font-size: 9px;
+  font-size: 18px;
+  line-height: 18px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   text-align: center;
   margin-right: 3px;
   color: rgba(255, 83, 81, 1);
+  transform: scale(0.5);
+  position: absolute;
+  left: -5px;
+  top: -3px;
 }
 
 .wap-product-item-handsel-172 {
